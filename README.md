@@ -17,10 +17,10 @@ Large organizations often struggle to monitor IT spending effectively due to dis
 
 ## 💡 Objective
 
-- Track and compare **Actual vs Forecast vs Plan** for IT costs
-- Identify **variance trends** and spending inefficiencies
-- Visualize spend distribution across **regions**, **business units**, and **IT areas**
-- Enable **interactive filtering** to support multiple stakeholder views
+- Track and compare **Actual vs Forecast vs Plan** for IT costs  
+- Identify **variance trends** and spending inefficiencies  
+- Visualize spend distribution across **regions**, **business units**, and **IT areas**  
+- Enable **interactive filtering** to support multiple stakeholder views  
 
 ---
 
@@ -28,30 +28,30 @@ Large organizations often struggle to monitor IT spending effectively due to dis
 
 The dataset includes:
 
-| Column | Description |
-|--------|-------------|
-| Date | Month-wise IT spend records |
-| Actual | Actual IT cost incurred |
-| Forecast | Forecasted IT cost |
-| Plan | Planned IT budget |
-| IT_Area | Functional domain of IT spend (e.g., Infra, Governance) |
-| Business_Area | Business unit where cost was incurred |
-| Region | Geographical region |
-| Cost_Element_Group | IT cost category (e.g., labor, services) |
+| Column             | Description                                 |
+|--------------------|---------------------------------------------|
+| Date               | Month-wise IT spend records                 |
+| Actual             | Actual IT cost incurred                     |
+| Forecast           | Forecasted IT cost                          |
+| Plan               | Planned IT budget                           |
+| IT_Area            | Functional domain of IT spend               |
+| Business_Area      | Business unit where cost was incurred       |
+| Region             | Geographical region                         |
+| Cost_Element_Group | IT cost category (e.g., labor, services)    |
 
 ---
 
 ## 🧪 Data Preparation & Transformation (in Power BI)
 
-- **Null handling** for missing values in Actual, Forecast, and Plan columns
-- **Data type conversion** for date and currency columns
-- **Custom date table** to sort and visualize months correctly
+- **Null handling** for missing values in Actual, Forecast, and Plan columns  
+- **Data type conversion** for date and currency columns  
+- **Custom date table** to sort and visualize months correctly  
 - **DAX Measures** created for:
-  - `Variance Amount` = Actual – Plan
-  - `Variance %` = (Actual – Plan) / Plan
-  - `Forecast Accuracy` = (Actual – Forecast) / Forecast
-- **Relationships** defined between dimension tables and the main fact table
-- **Filtering logic** applied to exclude zero or incomplete rows
+  - `Variance Amount` = Actual – Plan  
+  - `Variance %` = (Actual – Plan) / Plan  
+  - `Forecast Accuracy` = (Actual – Forecast) / Forecast  
+- **Relationships** defined between dimension tables and the main fact table  
+- **Filtering logic** applied to exclude zero or incomplete rows  
 
 ---
 
@@ -61,48 +61,54 @@ The Power BI report contains the following visuals:
 
 1. **Top KPIs**  
    - Total Actual, Forecast, Plan  
-   - Variance % and Variance Amount
+   - Variance % and Variance Amount  
 
 2. **Monthly Trend Charts**  
-   - Clustered Column and Line Charts for Actual, Forecast, and Plan over time
+   - Clustered Column and Line Charts for Actual, Forecast, and Plan  
 
 3. **Donut Chart by IT Area**  
-   - Visualizes distribution of Actual spend by IT function
+   - Visualizes Actual spend by IT function  
 
 4. **Bar Chart by Region**  
-   - Compares total Actual spend across global regions
+   - Compares Actual spend across global regions  
 
 5. **Interactive Filters**  
-   - Slicers for Region, Business Area, IT Area, and Cost Element Group
+   - Slicers for Region, Business Area, IT Area, and Cost Element Group  
+
+---
+
+## 📷 Dashboard Preview
+
+![Dashboard Screenshot]((https://github.com/sravangowrigari/IT-Expenditure-Analysis/blob/main/Screenshot%202025-07-06%20175300.png))
 
 ---
 
 ## 📈 Key Insights
 
-- Actual spend was **~$34M under budget** (–3.77% variance)
-- **Functional IT**, **BU Support**, and **Infrastructure** make up over 90% of the spending
-- **USA** accounts for the majority of IT expenses, while other regions lag far behind
-- Year-end spike in December may indicate delayed or bulk spending behavior
-- Governance and Enablement functions appear underfunded — potential strategy gap
+- Actual spend was **~$34M under budget** (–3.77% variance)  
+- **Functional IT**, **BU Support**, and **Infrastructure** make up over 90% of the spending  
+- **USA** accounts for the majority of IT expenses, while other regions lag behind  
+- Year-end spike in December may indicate delayed or bulk spending  
+- Governance and Enablement functions appear underfunded  
 
 ---
 
 ## 🛠️ Tools Used
 
-- **Power BI Desktop**
-- Power Query for data transformation
-- DAX for measure calculations
-- Excel for initial data source
+- **Power BI Desktop**  
+- Power Query for data transformation  
+- DAX for measure calculations  
+- Excel for source data  
 
 ---
 
 ## 📁 File Structure
 
 📂 IT-Expenditure-Analysis/
-├── IT_Expenditure_Analysis.pbix # Main Power BI dashboard file
-├── IT Expenditure dataset.xlsx # Source dataset
-├── Screenshot.png # Dashboard screenshot
-└── README.md # Project overview and documentation
+1. IT_Expenditure_Analysis.pbix # Main Power BI dashboard file
+2. IT Expenditure dataset.xlsx # Source dataset
+3. Screenshot.png # Dashboard screenshot
+4. README.md # Project overview and documentation
 
 ## 📌 How to Use
 

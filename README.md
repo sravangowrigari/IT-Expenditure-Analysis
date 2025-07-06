@@ -79,7 +79,7 @@ The Power BI report contains the following visuals:
 
 ## 📷 Dashboard Preview
 
-![Dashboard Screenshot]((https://github.com/sravangowrigari/IT-Expenditure-Analysis/blob/main/Screenshot%202025-07-06%20175300.png))
+![Dashboard Screenshot](https://github.com/sravangowrigari/IT-Expenditure-Analysis/blob/main/Screenshot%202025-07-06%20175300.png)
 
 ---
 
